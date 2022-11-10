@@ -10,7 +10,8 @@ import {
 import SaoPaulo from "../src/images/sao_paulo.jpg";
 import RioDeJaneiro from "../src/images/rio_de_janeiro.jpg";
 import Curitiba from "../src/images/curitiba.jpg";
-import BeloHorizonte from "../src/images/belo_horizonte.jpg";
+import Fortaleza from "../src/images/fortaleza.jpg";
+import Vitoria from "../src/images/vitoria.jpg";
 
 export default function Home({ navigation }) {
   return (
@@ -25,14 +26,14 @@ export default function Home({ navigation }) {
         <View style={styles.cardsContainer}>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("Mongagua")}
+            onPress={() => navigation.navigate("São Paulo")}
           >
             <Image style={styles.btnImage} source={SaoPaulo} />
             <Text style={styles.txtBotao}>São Paulo</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("RioDeJaneiro")}
+            onPress={() => navigation.navigate("Rio de Janeiro")}
           >
             <Image style={styles.btnImage} source={RioDeJaneiro} />
             <Text style={styles.txtBotao}>Rio de Janeiro</Text>
@@ -46,15 +47,16 @@ export default function Home({ navigation }) {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("BeloHorizonte")}
+            onPress={() => navigation.navigate("Fortaleza")}
           >
-            <Image style={styles.btnImage} source={RioDeJaneiro} />
-            <Text style={styles.txtBotao}>Belo Horizonte</Text>
+            <Image style={styles.btnImage} source={Fortaleza} />
+            <Text style={styles.txtBotao}>Fortaleza</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("Vitoria")}
+            onPress={() => navigation.navigate("Vitória")}
           >
+            <Image style={styles.btnImage} source={Vitoria} />
             <Text style={styles.txtBotao}>Vitória</Text>
           </TouchableOpacity>
         </View>

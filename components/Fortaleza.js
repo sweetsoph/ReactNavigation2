@@ -14,7 +14,7 @@ export default function Fortaleza({ navigation }) {
   const [data, setData] = React.useState({});
   React.useEffect(() => {
     axios
-      .get("https://api.hgbrasil.com/weather?key=0cf39b5cc&city_name=Vitoria,ES")
+      .get("https://api.hgbrasil.com/weather?key=0cf39b5cc&city_name=Fortaleza,CE")
       .then((response) => {
         console.log(response.data.results);
         setData(response.data.results);
