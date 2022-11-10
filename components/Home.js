@@ -32,28 +32,28 @@ export default function Home({ navigation }) {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("Mongagua")}
+            onPress={() => navigation.navigate("RioDeJaneiro")}
           >
             <Image style={styles.btnImage} source={RioDeJaneiro} />
             <Text style={styles.txtBotao}>Rio de Janeiro</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("Mongagua")}
+            onPress={() => navigation.navigate("Curitiba")}
           >
             <Image style={styles.btnImage} source={Curitiba} />
             <Text style={styles.txtBotao}>Curitiba</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("Mongagua")}
+            onPress={() => navigation.navigate("BeloHorizonte")}
           >
             <Image style={styles.btnImage} source={RioDeJaneiro} />
             <Text style={styles.txtBotao}>Belo Horizonte</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("Mongagua")}
+            onPress={() => navigation.navigate("Vitoria")}
           >
             <Text style={styles.txtBotao}>Vitória</Text>
           </TouchableOpacity>
