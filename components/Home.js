@@ -82,6 +82,10 @@ const styles = StyleSheet.create({
   },
   titulo: {
     fontSize: 30,
+    color: "#fe6d69",
+    fontWeight: "bold",
+    textAlign: "center",
+    marginTop: 10,
   },
   texto: {
     fontSize: 20,
@@ -94,7 +98,7 @@ const styles = StyleSheet.create({
   },
   botao: {
     marginTop: 20,
-    backgroundColor: "#389174",
+    backgroundColor: "#fe6d69",
     width: "45%",
   },
   btnImage: {
