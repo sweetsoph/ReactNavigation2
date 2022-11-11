@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -14,6 +14,7 @@ import Fortaleza from "../src/images/fortaleza.jpg";
 import Vitoria from "../src/images/vitoria.jpg";
 
 export default function Home({ navigation }) {
+  const [city, setCity] = useState("");
   return (
     <ScrollView>
       <View style={styles.bloco}>
@@ -26,35 +27,45 @@ export default function Home({ navigation }) {
         <View style={styles.cardsContainer}>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("São Paulo")}
+            onPress={() => {
+              navigation.navigate("Forecast", {city: "SaoPaulo"});
+            }}
           >
             <Image style={styles.btnImage} source={SaoPaulo} />
             <Text style={styles.txtBotao}>São Paulo</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("Rio de Janeiro")}
+            onPress={() => {
+              navigation.navigate("Forecast", {city: "RioDeJaneiro"});
+            }}
           >
             <Image style={styles.btnImage} source={RioDeJaneiro} />
             <Text style={styles.txtBotao}>Rio de Janeiro</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("Curitiba")}
+            onPress={() => {
+              navigation.navigate("Forecast", {city: "Curitiba"});
+            }}
           >
             <Image style={styles.btnImage} source={Curitiba} />
             <Text style={styles.txtBotao}>Curitiba</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("Fortaleza")}
+            onPress={() => {
+              navigation.navigate("Forecast", {city: "Fortaleza"});
+            }}
           >
             <Image style={styles.btnImage} source={Fortaleza} />
             <Text style={styles.txtBotao}>Fortaleza</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.botao}
-            onPress={() => navigation.navigate("Vitória")}
+            onPress={() => {
+              navigation.navigate("Forecast", {city: "Vitoria"});
+            }}
           >
             <Image style={styles.btnImage} source={Vitoria} />
             <Text style={styles.txtBotao}>Vitória</Text>
